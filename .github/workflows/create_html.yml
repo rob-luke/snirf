@@ -20,7 +20,7 @@ jobs:
         run: |
           mkdir output
           
-      - uses: docker://pandoc/latex:2.9
+      - uses: docker://pandoc/core:2.9
         with:
           args: --output=output/index.html snirf_specification.md
           
@@ -30,7 +30,7 @@ jobs:
           path: output/index.html
           
       - name: Deploy
-        if: ${{ github.ref == 'refs/heads/master' }}
+#         if: ${{ github.ref == 'refs/heads/master' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
