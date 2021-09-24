@@ -110,7 +110,7 @@ little/big endian) and are automatically converted by the HDF5 backend for
 consistent read/write between OS platforms.
 
 The development of the SNIRF specification is conducted in an open manner using the GitHub
-platform. To contribute or provide feedback visit https://github.com/fNIRS/snirf.
+platform. To contribute or provide feedback visit [https://github.com/fNIRS/snirf](https://github.com/fNIRS/snirf).
 
 ## SNIRF file specification
 
